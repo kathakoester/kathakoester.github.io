@@ -15,7 +15,7 @@ export default function HomeBanner() {
         {id: 'sm2', name: <i className="bi bi-instagram"></i>, scroll_link: '#'},
         {id: 'sm3', name: <i className="bi bi-linkedin"></i>, scroll_link: '#'},
     ]
-    
+
     return (
         <>
             <section id="home" data-scroll-data="0" className="home-banner">
@@ -33,12 +33,12 @@ export default function HomeBanner() {
                     <div className="row min-vh-100 align-items-center">
                         <div className="col-lg-6">
                             <div className="typo-box">
-                                <h6>Hi There, I'm</h6>
-                                <h1 className="font-alt">Zemo Plakson</h1>
-                                <h2>Freelance <span id="type-it"><ReactTypingEffect text={["Designer", "Developer"]} speed="100" typingDelay="500" eraseDelay="200" /></span></h2>
+                                <h6>Hallo! Ich bin</h6>
+                                <h1 className="font-alt">Katharina Köster</h1>
+                                <h2>Hebamme <span id="type-it"><ReactTypingEffect text={["Designer", "Developer"]} speed="100" typingDelay="500" eraseDelay="200" /></span></h2>
                                 <p>The namics of how users interact with interactive elements within a user interface flow chart based on container proportion.</p>
                                 <div className="btn-bar">
-                                    <Link className={theme === 'light' ? 'px-btn px-btn-theme' : 'px-btn px-btn-white'} to="#">Contact Me</Link>
+                                    <Link className={theme === 'light' ? 'px-btn px-btn-theme' : 'px-btn px-btn-white'} to="#">Kontakt</Link>
                                 </div>
                             </div>
                         </div>

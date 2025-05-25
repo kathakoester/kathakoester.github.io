@@ -10,7 +10,7 @@ import { Link as ScrollLink } from 'react-scroll';
 function Menu(props){
     return (
         <li>
-            <ScrollLink 
+            <ScrollLink
                 to={props.scrollLink}
                 smooth={true}
                 duration={500}
@@ -33,12 +33,12 @@ export default function Header() {
     const { toggleTheme } = useTheme();
 
     const header_menus = [
-        { id:'0', name:'Home', scrollLink:'home', offset: 0 },
-        { id:'1', name:'About Us', scrollLink:'about', offset: 0 },
-        { id:'2', name:'Services', scrollLink:'services', offset: 0 },
-        { id:'3', name:'Portfolio', scrollLink:'work', offset: 0 },
-        { id:'4', name:'Blog', scrollLink:'blog', offset: 0 },
-        { id:'5', name:'Contact', scrollLink:'contactus', offset: 0 }
+        { id:'0', name:'Start', scrollLink:'home', offset: 0 },
+        { id:'1', name:'Über mich', scrollLink:'about', offset: 0 },
+        { id:'2', name:'Dienste', scrollLink:'services', offset: 0 },
+        //{ id:'3', name:'Portfolio', scrollLink:'work', offset: 0 },
+        //{ id:'4', name:'Blog', scrollLink:'blog', offset: 0 },
+        { id:'5', name:'Kontakt', scrollLink:'contactus', offset: 0 }
     ]
 
     return (
@@ -46,7 +46,7 @@ export default function Header() {
             <header className="main-header">
                 <nav className="navbar header-nav header-white header-transparent navbar-expand-lg one-page-nav">
                     <div className="container">
-                        <RouterLink className="navbar-brand" to="/">Zemo</RouterLink>
+                        <RouterLink className="navbar-brand" to="/">Hebamme Katharina Köster</RouterLink>
                         <button className="navbar-toggler" type="button" onClick={() => setIsOpenMenu(!isOpenMenu)} data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
@@ -63,7 +63,7 @@ export default function Header() {
                         </div>
                         <button onClick={toggleTheme} className="theme-toggle-btn">
                             <i className="bi bi-sun"></i>
-                            <i className="bi bi-moon-stars"></i>  
+                            <i className="bi bi-moon-stars"></i>
                         </button>
                     </div>
                 </nav>

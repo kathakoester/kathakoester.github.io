@@ -42,7 +42,7 @@ export default function ContactUs() {
         setErrors(formErrors);
         return valid;
     };
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -79,32 +79,26 @@ export default function ContactUs() {
                                     <div className="sm-title">
                                         <h3>Email</h3>
                                     </div>
-                                    <p>info@domainname.com<br />support@domain.com</p>
+                                    <p>hebamme@katharinakoester.de</p>
                                 </div>
                                 <div className="contact-name">
                                     <div className="sm-title">
-                                        <h3>Visit My Studio</h3>
+                                        <h3>Arbeitsumfeld</h3>
                                     </div>
-                                    <p>Warnwe Park Streetperrine, <br />FL 33157 New York City</p>
+                                    <p>
+                                        Stadtteile Winterhude, Barmbek & Uhlenhorst<br />
+                                        <em>Hamburg</em>
+                                    </p>
                                 </div>
                                 <div className="contact-name">
                                     <div className="sm-title">
-                                        <h3>Phone</h3>
+                                        <h3>Telefon</h3>
                                     </div>
-                                    <p>+01 123 654 8096</p>
+                                    <p>+49 178 2446789</p>
                                 </div>
                                 <div className="social-share nav">
                                     <a href="/">
-                                        <i className="bi bi-facebook"></i>
-                                    </a>
-                                    <a href="/">
-                                        <i className="bi bi-twitter"></i>
-                                    </a>
-                                    <a href="/">
                                         <i className="bi bi-instagram"></i>
-                                    </a>
-                                    <a href="/">
-                                        <i className="bi bi-linkedin"></i>
                                     </a>
                                 </div>
                             </div>

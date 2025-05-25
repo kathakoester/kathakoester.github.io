@@ -22,10 +22,6 @@ export default function Zemo() {
                 <HomeBanner />
                 <About />
                 <Services />
-                <Resume />
-                <Work />
-                <Testimonial />
-                <Blog />
                 <ContactUs />
             </main>
             <Footer />

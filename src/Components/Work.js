@@ -14,7 +14,7 @@ export default function Work() {
 
     const lightboxGalleryRef = useRef();
     const popupRef = useRef();
-    
+
     useEffect(() => {
         const elementExists = (selector) => !!document.querySelector(selector);
 
