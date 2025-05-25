@@ -1,0 +1,136 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: inherit;
+  }
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	color: $px-body;
+	font-family: $px-font;
+	line-height: $px-line-height;
+	font-size: $px-font-size;
+	font-weight: 400;
+	overflow-x: hidden;
+	background-color: var(--px-body-bg);
+}
+
+
+.form-control::-ms-input-placeholder { 
+	color: var(--px-text);
+}
+
+.form-control::placeholder {
+color: var(--px-text);
+}
+
+
+.font-alt {
+	font-family: $px-font-alt;
+}
+
+img {
+	max-width: 100%;
+}
+
+* {
+	outline: none !important;
+}
+
+a {
+	color: var(--px-theme);
+	text-decoration: none;
+	@include px-hover {
+		//color: darken(var(--px-theme), 8%);
+		text-decoration: none;
+	}
+}
+
+
+mark {
+    background-image: linear-gradient(var(--px-theme), var(--px-theme));
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    background-color: transparent;
+    padding: 0;
+    color: currentColor;
+}
+ 
+/* ----------------------
+*	swiper
+---------------------------*/
+.swiper {
+	.swiper-pagination {
+		position: relative;
+	}
+}
+
+
+/* Page title
+--------------------------------*/
+.page-title {
+	padding: 160px 0 80px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+	@include down-lg {
+		padding-top: 130px;
+		padding-bottom: 50px;
+	}
+	h1 {
+		font-weight: 700;
+		margin-bottom: 15px;
+		color: var(--px-heading);
+		@include down-md {
+			font-size: 30px;
+		}
+	}
+}
+
+
+/* Breadcrumbs
+--------------------------------*/
+.breadcrumb {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: none;
+	border-radius: 0;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		font-weight: 400;
+		position: relative;
+		color: var(--px-heading);
+		+ li {
+			padding-left: 17px;
+			margin-left: 17px;
+			&:after {
+				content:"";
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background: currentColor;
+				opacity: 0.5;
+				left: -2px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+		a {
+			color: var(--px-heading);
+		}
+	}
+}

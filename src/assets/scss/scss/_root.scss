@@ -1,0 +1,43 @@
+:root {
+    --px-theme: #ea4020;
+    --px-body-bg: #ffffff;
+    
+    --px-mode: #292929;
+
+    --px-mode-rgb: 41,41,41;
+
+    --px-text: #555a64;
+    --px-heading: #292929;
+    --px-dark: #292929;
+
+    --px-dark-rgb: 41,41,41;
+
+    --px-white: #fff;
+
+    --px-gray-1: #f7f6ff;
+    --px-gray-2: #e2e8f0;
+
+    --swiper-theme-color: var(--px-theme);
+    --swiper-pagination-bullet-inactive-color: var(--px-gray-2);
+}
+
+
+
+    .theme-dark {
+        --px-theme: #ea4020;
+        --px-body-bg: #011627;
+        --px-mode: #fff;
+
+        --px-mode-rgb: 255,255,255;
+
+        --px-text: #c5c5c5;
+        --px-heading: #fff;
+        --px-dark: #292929;
+
+        --px-dark-rgb: 41,41,41;
+
+        --px-white: #fff;
+
+        --px-gray-1: #001e35;
+        --px-gray-2: #011627;
+    }

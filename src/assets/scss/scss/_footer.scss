@@ -1,0 +1,29 @@
+/*Footer
+---------------------*/
+
+.footer {
+	padding: 12px 0;
+    background: var(--px-body-bg);
+    border-top: 1px solid rgba(var(--px-mode-rgb), 0.1);
+    .nav {
+    	a {
+		    color: var(--px-text);
+		    font-size: 14px;
+		    margin-right: 17px;
+		    &:hover {
+		    	color: var(--px-theme);
+		    }
+    	}
+    }
+    p {
+    	color: var(--px-text);
+		font-size: 14px;
+		margin: 0;
+		a {
+			color: var(--px-text);
+			&:hover {
+		    	color: var(--px-theme);
+		    }
+		}
+    }
+}

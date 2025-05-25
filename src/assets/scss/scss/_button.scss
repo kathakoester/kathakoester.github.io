@@ -1,0 +1,69 @@
+/* Buttons
+---------------------*/
+.px-btn{
+	padding: 0 35px;
+	line-height: 48px;
+	position: relative;
+	display: inline-block;
+	background: none;
+	border: none;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none !important;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: $px-shadow;
+	border-radius: 5px;
+	&.px-btn-theme {
+		background: var(--px-theme);
+		color: $px-white;
+		&:after {
+			content:"";
+			position: absolute;
+			bottom: 0;
+			left: auto;
+			right: 0;
+			top: 0;
+			width: 0px;
+			@include transition(ease all 0.35s);
+			background: var(--px-mode);
+			z-index: -1;
+		}
+		&:hover {
+			color: var(--px-white);
+			.theme-dark & {
+				color: var(--px-dark);
+			}
+			&:after {
+				width: 100%;
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+	&.px-btn-white {
+		background: var(--px-mode);
+		color: $px-dark;
+		&:after {
+			content:"";
+			position: absolute;
+			bottom: 0;
+			left: auto;
+			right: 0;
+			top: 0;
+			width: 0px;
+			@include transition(ease all 0.35s);
+			background: var(--px-theme);
+			z-index: -1;
+		}
+		&:hover {
+			color: var(--px-white);
+			&:after {
+				width: 100%;
+				left: 0;
+				right: auto;
+			}
+		}
+	}
+}
