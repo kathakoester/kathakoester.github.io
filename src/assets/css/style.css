@@ -22,7 +22,6 @@ Primary use:    pxdraft
 @import url(/node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url(/node_modules/magnific-popup/dist/magnific-popup.css);
 @import url(/node_modules/bootstrap-icons/font/bootstrap-icons.css);
-@import url(custom.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .light-bg.fixed-header .main-header {
   box-shadow: 0 12px 15px rgba(140, 152, 164, 0.1);
