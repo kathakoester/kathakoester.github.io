@@ -27,7 +27,7 @@
 			top: 0;
 			width: 0px;
 			@include transition(ease all 0.35s);
-			background: var(--px-mode);
+			background: var(--px-theme-inverse);
 			z-index: -1;
 		}
 		&:hover {

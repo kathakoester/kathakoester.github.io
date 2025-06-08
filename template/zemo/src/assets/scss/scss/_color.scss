@@ -1,0 +1,34 @@
+.gray-bg {
+	background-color: var(--px-gray-1);
+}
+
+.theme-bg {
+	background-color: var(--px-theme);
+}
+
+.dark-bg {
+	background-color: $px-dark;
+}
+.dark-bg-1 {
+	background-color: var(--px-gray-1);
+}
+.dark-bg-hover {
+	background: rgba($px-white, .05) !important;
+	&:hover {
+		background: var(--px-theme) !important;
+	}
+}
+.dark-text-1 {
+	color: $px-dark-1;
+}
+
+.dark-text {
+	color: $px-dark;
+}
+.color-white {
+	color: $px-white;
+}
+
+.color-theme {
+	color: var(--px-theme);
+}

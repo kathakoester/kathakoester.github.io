@@ -10,10 +10,7 @@ export default function HomeBanner() {
     const { theme } = useTheme();
 
     const social_media = [
-        {id: 'sm0', name: <i className="bi bi-facebook"></i>, scroll_link: '#'},
-        {id: 'sm1', name: <i className="bi bi-twitter"></i>, scroll_link: '#'},
-        {id: 'sm2', name: <i className="bi bi-instagram"></i>, scroll_link: '#'},
-        {id: 'sm3', name: <i className="bi bi-linkedin"></i>, scroll_link: '#'},
+
     ]
 
     return (
@@ -26,17 +23,17 @@ export default function HomeBanner() {
                         })
                     }
                 </div>
-                <div className="text-placeholder">
-                    <h5>Z<br />e<br />m<br />o</h5>
-                </div>
                 <div className="container">
                     <div className="row min-vh-100 align-items-center">
                         <div className="col-lg-6">
                             <div className="typo-box">
                                 <h6>Hallo! Ich bin</h6>
                                 <h1 className="font-alt">Katharina Köster</h1>
-                                <h2>Hebamme <span id="type-it"><ReactTypingEffect text={["Designer", "Developer"]} speed="100" typingDelay="500" eraseDelay="200" /></span></h2>
-                                <p>The namics of how users interact with interactive elements within a user interface flow chart based on container proportion.</p>
+                                <h2>Hebamme</h2>
+                                <p>
+                                    Empathisch begleiten, individuell stärken, evidenzbasiert handeln – das ist für mich moderne Hebammenkunst.
+                                    Für eine persönliche, sichere und bestärkende Betreuung.
+                                </p>
                                 <div className="btn-bar">
                                     <Link className={theme === 'light' ? 'px-btn px-btn-theme' : 'px-btn px-btn-white'} to="#">Kontakt</Link>
                                 </div>
@@ -45,7 +42,7 @@ export default function HomeBanner() {
                         <div className="col-lg-6">
                             <div className="home-avatar-box">
                                 <div className="home-avatar-in">
-                                    <img src="img/home-banner.png" alt="banner1" />
+                                    <img src="img/katharina-home.png" alt="Katharina Köster" />
                                 </div>
                             </div>
                         </div>

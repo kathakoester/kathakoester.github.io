@@ -46,7 +46,11 @@ export default function Header() {
             <header className="main-header">
                 <nav className="navbar header-nav header-white header-transparent navbar-expand-lg one-page-nav">
                     <div className="container">
-                        <RouterLink className="navbar-brand" to="/">Hebamme Katharina Köster</RouterLink>
+                        <RouterLink className="navbar-brand" to="/">
+                            <img class="logo" src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />
+                            <span class="header-profession">Hebamme </span>
+                            Katharina Köster
+                        </RouterLink>
                         <button className="navbar-toggler" type="button" onClick={() => setIsOpenMenu(!isOpenMenu)} data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle" aria-expanded="false" aria-label="Toggle navigation">
                             <span></span>
                             <span></span>
@@ -56,15 +60,11 @@ export default function Header() {
                             <ul className="navbar-nav lg:ml-auto">
                                 {
                                     header_menus.map((val) => {
-                                        return <Menu className="nav-link" key={val.id} id={val.id} name={val.name} scrollLink={val.scrollLink} offset={val.offset}/>
+                                        return <Menu className="nav-link" key={val.id} id={val.id} name={val.name} scrollLink={val.scrollLink} offset={val.offset} />
                                     })
                                 }
                             </ul>
                         </div>
-                        <button onClick={toggleTheme} className="theme-toggle-btn">
-                            <i className="bi bi-sun"></i>
-                            <i className="bi bi-moon-stars"></i>
-                        </button>
                     </div>
                 </nav>
             </header>

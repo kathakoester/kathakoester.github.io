@@ -1,0 +1,14 @@
+.logo {
+    max-height: 1em;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+}
+
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@include media-breakpoint-down(md) {
+  .header-profession {
+    display: none;
+  }
+}
