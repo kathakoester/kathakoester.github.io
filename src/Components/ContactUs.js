@@ -1,62 +1,4 @@
-//import { useTheme } from "./ThemeProvider";
-import React, { useState } from 'react';
-
 export default function ContactUs() {
-    //const { theme } = useTheme();
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
-    const [setErrors] = useState();
-    const [success] = useState(false);
-
-    const mailformat = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
-
-    const validate = () => {
-        let formErrors = {};
-        let valid = true;
-
-        if (!name) {
-            formErrors.name = 'Bitte gib Deinen Namen an';
-            valid = false;
-        }
-
-        if (!email) {
-            formErrors.email = 'Bitte gib Deine Emailadresse an';
-            valid = false;
-        } else if (!email.match(mailformat)) {
-            formErrors.email = 'Bitte gib eine valide Emailadresse an';
-            valid = false;
-        }
-
-        if (!subject) {
-            formErrors.subject = 'Bitte gib einen kurzen Betreff an';
-            valid = false;
-        }
-
-        if (!message) {
-            formErrors.message = 'Bitte füge eine Nachricht ein';
-            valid = false;
-        }
-
-        setErrors(formErrors);
-        return valid;
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        if (!validate()) {
-            return;
-        }
-
-        // const data = {
-        //     name,
-        //     email,
-        //     subject,
-        //     message,
-        // };
-    };
 
     return (
         <>
@@ -101,7 +43,7 @@ export default function ContactUs() {
                         <div className="col-lg-8 my-3">
                             <div className="p-3 map-box rounded">
                                 <div className="ratio ratio-16x9 grayscale">
-                                    <img src="img/katharina-radius.jpg" />
+                                    <img alt="Betreuungsgebiet" src="img/katharina-radius.jpg" />
                                 </div>
                             </div>
                         </div>
