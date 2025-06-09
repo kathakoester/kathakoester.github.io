@@ -35,7 +35,7 @@ export default function HomeBanner() {
                                     Für eine persönliche, sichere und bestärkende Betreuung.
                                 </p>
                                 <div className="btn-bar">
-                                    <Link className={theme === 'light' ? 'px-btn px-btn-theme' : 'px-btn px-btn-white'} to="#">Kontakt</Link>
+                                    <a class="px-btn px-btn-theme" href="#kontakt">Kontakt</a>
                                 </div>
                             </div>
                         </div>

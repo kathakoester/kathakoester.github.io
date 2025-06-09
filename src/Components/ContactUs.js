@@ -2,6 +2,7 @@ export default function ContactUs() {
 
     return (
         <>
+            <a id="kontakt">&nbsp;</a>
             <section id="contactus" data-scroll-data="5" className="section dark-bg-1 contactus-section">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -43,7 +44,7 @@ export default function ContactUs() {
                         <div className="col-lg-8 my-3">
                             <div className="p-3 map-box rounded">
                                 <div className="ratio ratio-16x9 grayscale">
-                                    <img alt="Betreuungsgebiet" src="img/katharina-radius.jpg" />
+                                    <img alt="Betreuungsgebiet" src="img/katharina-radius.webp" />
                                 </div>
                             </div>
                         </div>
