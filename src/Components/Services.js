@@ -22,17 +22,13 @@ export default function Services() {
                                     <p>
                                         Ich begleite dich einfühlsam und kompetent durch die besondere
                                         Zeit der Schwangerschaft. Auf Wunsch übernehme ich alle Vorsorgeuntersuchungen
-                                        nach den Mutterschaftsrichtlinien – in Abstimmung mit deiner Frauenärztin
-                                        oder deinem Frauenarzt.
+                                        nach den Mutterschaftsrichtlinien – in Abstimmung mit deiner Gynäkolog:in.
                                     </p>
                                     <p>
                                         Bei Schwangerschaftsbeschwerden bin ich für dich da und unterstütze dich
-                                        mit fachlichem Rat. Außerdem berate ich dich zu wichtigen Themen wie Ernährung,
-                                        Sexualität, körperlichen Veränderungen und zur Vorbereitung auf die Geburt.
-                                    </p>
-                                    <p>
-                                        So fühlst du dich während deiner Schwangerschaft gut informiert, sicher begleitet
-                                        und rundum unterstützt.
+                                        mit fachlichem Rat. Außerdem berate ich dich zu Themen wie Ernährung,
+                                        Sexualität, körperlichen Veränderungen und zur Vorbereitung auf die Geburt und 
+                                        das Wochenbett.
                                     </p>
                                 </div>
                             </div>
@@ -46,18 +42,17 @@ export default function Services() {
                                     <h5>Wochenbett</h5>
                                     <p>
                                         Als Hebamme biete ich dir eine umfassende Wochenbettbetreuung und kompetente
-                                        Nachsorge in der sensiblen Zeit nach der Geburt. Ich beobachte die Entwicklung
-                                        deines Babys, übernehme das regelmäßige Wiegen sowie die Nabelpflege.
+                                        Nachsorge in der sensiblen Zeit nach der Geburt. Dabei stehen die körperliche Untersuchung 
+                                        von Mutter und Kind sowie die individuelle Beratung zum Stillen
+                                        und zu allen Fragen rund ums Neugeborene im Mittelpunkt. 
                                     </p>
                                     <p>
-                                        Du erhältst eine individuelle Beratung zur Pflege des Neugeborenen,
-                                        Unterstützung beim Stillen und Antworten auf Fragen zur Ernährung. Auch die
-                                        Rückbildung der Gebärmutter wird fachlich begleitet – ebenso wie körperliche
-                                        Beschwerden oder Heilungsprozesse.
+                                        In den ersten 10 Tagen komme ich täglich vorbei, danach in Absprache mit Dir alle 2-5 Tage. 
+                                        Diese Betreuung wird von deiner Krankenkasse bis zum Ende des dritten Lebensmonats deines 
+                                        Babys übernommen.
                                     </p>
                                     <p>
-                                        Zusätzlich stehe ich dir bei Themen wie Schlaf, Bindung und emotionaler
-                                        Stabilität unterstützend zur Seite.
+                                        Zusätzlich stehe ich dir bei Themen wie Schlaf, Bindung und Ernährung unterstützend zur Seite.
                                     </p>
                                 </div>
                             </div>
@@ -71,10 +66,10 @@ export default function Services() {
                                     <h5>Kinesiotaping</h5>
                                     <p>
                                         Kinesiotaping ist eine medikamentenfreie Methode, die Muskulatur entlastet,
-                                        Durchblutung fördert und das Lymphsystem aktiviert. In der Schwangerschaft
-                                        lindert Taping Rückenschmerzen, Ischias, Nackenverspannungen, Beckenschmerzen,
-                                        hilft bei Symphysenschmerzen, unterstützt den Bauch, fördert den Lymphfluss
-                                        und kann Übelkeit lindern. Im Wochenbett kann die Rückbildung unterstützt,
+                                        Durchblutung fördert und das Lymphsystem aktiviert. Es hilft bei Rückenschmerzen, 
+                                        Ischias, Nackenverspannungen und Beckenschmerzen,
+                                        In der Schwangerschaft kann Taping Symphysenschmerzen lindern, unterstützt den Bauch, fördert den Lymphfluss
+                                        und kann Übelkeit mildern. Im Wochenbett kann die Rückbildung unterstützt,
                                         der Milchfluss verbessert, der Wochenfluss gefördert und Brustspannen
                                         gelindert werden.
                                     </p>
