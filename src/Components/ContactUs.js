@@ -15,6 +15,9 @@ export default function ContactUs() {
                     <div className="row justify-content-center">
                         <div className="col-lg-4 my-3">
                             <div className="contact-info">
+                                <div className="contact-logo">
+                                    <img src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />
+                                </div>
                                 <div className="contact-name">
                                     <div className="sm-title">
                                         <h3>Betreuungsgebiet</h3>
@@ -41,9 +44,6 @@ export default function ContactUs() {
                                         <h3>Vertretung</h3>
                                     </div>
                                     <p><a href="https://www.carolinheller.de/" target="_blank" rel="noreferrer">Hebamme Carolin Heller</a></p>
-                                </div>
-                                <div className="contact-logo">
-                                    <img src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />
                                 </div>
                             </div>
                         </div>
