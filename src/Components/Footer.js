@@ -11,9 +11,6 @@ export default function Footer() {
                                 <Link to="impressum.html">
                                     <p>Impressum</p>
                                 </Link>
-                                <Link to="datenschutz.html">
-                                    <p>Datenschutz</p>
-                                </Link>
                             </div>
                         </div>
                         <div className="col-md-6 my-2 text-center text-md-end">
