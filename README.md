@@ -1,11 +1,13 @@
 # Website Hebamme Katharina Köster
 
-
-https://www.atlist.com/blog/how-to-show-radius-on-google-maps
-https://github.com/gitname/react-gh-pages?tab=readme-ov-file
+These are the sources for my website.
 
 ## 🚀 Deploying the project
+
+Deploy changes manually (not recommended)
 
 ```
 npm run deploy
 ```
+
+Or push your changes to GitHub and a action takes care of deploying changes.
