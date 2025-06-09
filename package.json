@@ -27,6 +27,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "gh-pages-deploy": {
+    "cname": "www.katharinakoester.de"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
