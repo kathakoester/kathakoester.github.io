@@ -72,10 +72,10 @@ export default function Services() {
                                     <p>
                                         Kinesiotaping ist eine medikamentenfreie Methode, die Muskulatur entlastet,
                                         Durchblutung fördert und das Lymphsystem aktiviert. In der Schwangerschaft
-                                        lindertm Taping Rückenschmerzen, Ischias, Nackenverspannungen, Beckenschmerzen,
+                                        lindert Taping Rückenschmerzen, Ischias, Nackenverspannungen, Beckenschmerzen,
                                         hilft bei Symphysenschmerzen, unterstützt den Bauch, fördert den Lymphfluss
-                                        und kann Übelkeit lindern. Im Wochenbett kann die Rückbildung unterstützt
-                                        unterstützt, der Milchfluss verbessert, der Wochenfluss gefördert und Brustspannen
+                                        und kann Übelkeit lindern. Im Wochenbett kann die Rückbildung unterstützt,
+                                        der Milchfluss verbessert, der Wochenfluss gefördert und Brustspannen
                                         gelindert werden.
                                     </p>
                                     <p>

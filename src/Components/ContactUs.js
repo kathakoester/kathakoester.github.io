@@ -17,7 +17,7 @@ export default function ContactUs() {
                             <div className="contact-info">
                                 <div className="contact-name">
                                     <div className="sm-title">
-                                        <h3>Betreuungsumfeld</h3>
+                                        <h3>Betreuungsgebiet</h3>
                                     </div>
                                     <p>
                                         Stadtteile Winterhude, Barmbek & Uhlenhorst in
@@ -35,6 +35,12 @@ export default function ContactUs() {
                                         <h3>Telefon</h3>
                                     </div>
                                     <p><a href="tel:+491782446789">+49 178 2446789</a></p>
+                                </div>
+                                <div className="contact-name">
+                                    <div className="sm-title">
+                                        <h3>Vertretung</h3>
+                                    </div>
+                                    <p><a href="https://www.carolinheller.de/" target="_blank">Hebamme Carolin Heller</a></p>
                                 </div>
                                 <div className="contact-logo">
                                     <img src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />
