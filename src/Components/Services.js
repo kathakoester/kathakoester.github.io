@@ -47,7 +47,7 @@ export default function Services() {
                                         und zu allen Fragen rund ums Neugeborene im Mittelpunkt. 
                                     </p>
                                     <p>
-                                        In den ersten 10 Tagen komme ich täglich vorbei, danach in Absprache mit Dir alle 2-5 Tage. 
+                                        In den ersten 10 Tagen komme ich täglich vorbei, danach in Absprache mit Dir alle 2-7 Tage. 
                                         Diese Betreuung wird von deiner Krankenkasse bis zum Ende des dritten Lebensmonats deines 
                                         Babys übernommen.
                                     </p>
@@ -65,11 +65,10 @@ export default function Services() {
                                 <div className="feature-content">
                                     <h5>Kinesiotaping</h5>
                                     <p>
-                                        Kinesiotaping ist eine medikamentenfreie Methode, die Muskulatur entlastet,
-                                        Durchblutung fördert und das Lymphsystem aktiviert. Es hilft bei Rückenschmerzen, 
-                                        Ischias, Nackenverspannungen und Beckenschmerzen,
-                                        In der Schwangerschaft kann Taping Symphysenschmerzen lindern, unterstützt den Bauch, fördert den Lymphfluss
-                                        und kann Übelkeit mildern. Im Wochenbett kann die Rückbildung unterstützt,
+                                        Kinesiotaping ist eine medikamentenfreie Methode, die bei Rückenschmerzen, 
+                                        Ischias, Nackenverspannungen und Beckenschmerzen hilft. 
+                                        In der Schwangerschaft kann Kinesiotatping Symphysenschmerzen lindern, den Bauch unterstützen, den Lymphfluss fördern
+                                        und Übelkeit mildern. Im Wochenbett kann die Rückbildung unterstützt,
                                         der Milchfluss verbessert, der Wochenfluss gefördert und Brustspannen
                                         gelindert werden.
                                     </p>
