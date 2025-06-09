@@ -221,7 +221,7 @@ body {
 
 
 
-/* About 
+/* About
 ---------------------*/
 .about-row {
     margin-bottom: 30px;
@@ -316,7 +316,7 @@ body {
 
 
 .feature-box-1 {
-    padding: 0 15% 30px;
+    padding: 0 10% 30px;
     background: var(--px-body-bg);
     border-radius: 10px;
     text-align: center;
@@ -324,6 +324,7 @@ body {
     border: 1px solid var(--px-gray-2);
     transition: ease all 0.35s;
     box-shadow: $px-shadow;
+    height: 95%;
 
     .icon {
         text-align: center;

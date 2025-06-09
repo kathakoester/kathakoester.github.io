@@ -17,25 +17,25 @@ export default function ContactUs() {
         let valid = true;
 
         if (!name) {
-            formErrors.name = 'Your Name is Required';
+            formErrors.name = 'Bitte gib Deinen Namen an';
             valid = false;
         }
 
         if (!email) {
-            formErrors.email = 'Please Enter Email';
+            formErrors.email = 'Bitte gib Deine Emailadresse an';
             valid = false;
         } else if (!email.match(mailformat)) {
-            formErrors.email = 'Please Enter Valid Email';
+            formErrors.email = 'Bitte gib eine valide Emailadresse an';
             valid = false;
         }
 
         if (!subject) {
-            formErrors.subject = 'Subject is Required';
+            formErrors.subject = 'Bitte gib einen kurzen Betreff an';
             valid = false;
         }
 
         if (!message) {
-            formErrors.message = 'Please Describe your thoughts';
+            formErrors.message = 'Bitte füge eine Nachricht ein';
             valid = false;
         }
 
@@ -61,14 +61,11 @@ export default function ContactUs() {
     return (
         <>
             <section id="contactus" data-scroll-data="5" className="section dark-bg-1 contactus-section">
-                <div className="text-placeholder">
-                    <h5>Contact</h5>
-                </div>
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-6 text-center">
                             <div className="section-title">
-                                <h2><span>Contact Me</span></h2>
+                                <h2><span>Kontakt</span></h2>
                             </div>
                         </div>
                     </div>
@@ -77,74 +74,34 @@ export default function ContactUs() {
                             <div className="contact-info">
                                 <div className="contact-name">
                                     <div className="sm-title">
-                                        <h3>Email</h3>
+                                        <h3>Betreuungsumfeld</h3>
                                     </div>
-                                    <p>hebamme@katharinakoester.de</p>
+                                    <p>
+                                        Stadtteile Winterhude, Barmbek & Uhlenhorst in
+                                        Hamburg
+                                    </p>
                                 </div>
                                 <div className="contact-name">
                                     <div className="sm-title">
-                                        <h3>Arbeitsumfeld</h3>
+                                        <h3>Email</h3>
                                     </div>
-                                    <p>
-                                        Stadtteile Winterhude, Barmbek & Uhlenhorst<br />
-                                        <em>Hamburg</em>
-                                    </p>
+                                    <p><a href="mailto:hebamme@katharinakoester.de">hebamme@katharinakoester.de</a></p>
                                 </div>
                                 <div className="contact-name">
                                     <div className="sm-title">
                                         <h3>Telefon</h3>
                                     </div>
-                                    <p>+49 178 2446789</p>
+                                    <p><a href="tel:+491782446789">+49 178 2446789</a></p>
                                 </div>
-                                <div className="social-share nav">
-                                    <a href="/">
-                                        <i className="bi bi-instagram"></i>
-                                    </a>
+                                <div className="contact-logo">
+                                    <img src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-8 my-3">
-                            <div className="contact-form">
-                                <div className="sm-title">
-                                    <h3>Get In Touch</h3>
-                                </div>
-                                <form id="contact-form" onSubmit={handleSubmit}>
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <input name="Name" id="name" placeholder="Name *" className="form-control" type="text" value={name} onChange={(e) => setName(e.target.value)} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <input name="Email" id="email" placeholder="Email *" className="form-control" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                                            </div>
-                                        </div>
-                                        <div className="col-12">
-                                            <div className="form-group">
-                                                <input name="Subject" id="subject" placeholder="Subject *" className="form-control" type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="form-group">
-                                                <textarea name="message" id="message" placeholder="Your message *" rows="3" className="form-control" value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="send">
-                                                <button className="px-btn px-btn-theme" type="submit" value="Send"><span>Contact Us</span></button>
-                                            </div>
-                                            {success && <span id="suce_message" className="text-success d-none">Message Sent Successfully</span>}
-                                            {!success && <span id="err_message" className="text-danger d-none">Message Sending Failed</span>}
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div className="col-12 mt-4">
                             <div className="p-3 map-box rounded">
-                                <div className="ratio ratio-21x9 grayscale">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3151.840107317064!2d144.955925!3d-37.817214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1520156366883" title="map" />
+                                <div className="ratio ratio-16x9 grayscale">
+                                    <img src="img/katharina-radius.jpg" />
                                 </div>
                             </div>
                         </div>

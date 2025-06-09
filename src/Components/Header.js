@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTheme } from "./ThemeProvider";
+//import { useTheme } from "./ThemeProvider";
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -30,7 +30,7 @@ function Menu(props){
 
 export default function Header() {
     const [isOpenMenu, setIsOpenMenu] = useState(0);
-    const { toggleTheme } = useTheme();
+    //const { toggleTheme } = useTheme();
 
     const header_menus = [
         { id:'0', name:'Start', scrollLink:'home', offset: 0 },

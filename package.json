@@ -1,7 +1,7 @@
 {
   "name": "zemo",
   "version": "0.1.0",
-  "homepage": "http://localhost:3000",
+  "homepage": "https://www.katharinakoester.de",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",

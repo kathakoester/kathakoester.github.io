@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTheme } from "./ThemeProvider";
-import ReactTypingEffect from 'react-typing-effect';
+//import ReactTypingEffect from 'react-typing-effect';
 
 /*--------------------
 * Banner Section
