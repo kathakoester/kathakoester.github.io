@@ -2,7 +2,7 @@ export default function ContactUs() {
 
     return (
         <>
-            <a id="kontakt">&nbsp;</a>
+            <a id="kontakt" href="#kontakt">&nbsp;</a>
             <section id="contactus" data-scroll-data="5" className="section dark-bg-1 contactus-section">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -40,7 +40,7 @@ export default function ContactUs() {
                                     <div className="sm-title">
                                         <h3>Vertretung</h3>
                                     </div>
-                                    <p><a href="https://www.carolinheller.de/" target="_blank">Hebamme Carolin Heller</a></p>
+                                    <p><a href="https://www.carolinheller.de/" target="_blank" rel="noreferrer">Hebamme Carolin Heller</a></p>
                                 </div>
                                 <div className="contact-logo">
                                     <img src="img/katharina-logo.png" alt="Logo Hebamme Katharina Köster" />

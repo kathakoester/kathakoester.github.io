@@ -9,6 +9,7 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.6",
+    "jquery": "^3.7.1",
     "magnific-popup": "^1.2.0",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
