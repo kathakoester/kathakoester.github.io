@@ -33,7 +33,7 @@ export default function About() {
                         </div>
                         <div className="col-lg-5">
                             <div className="about-left">
-                                <img src="img/katharina-uebermich.png" alt="about" />
+                                <img src="img/katharina-uebermich.webp" alt="about" />
                             </div>
                         </div>
                     </div>

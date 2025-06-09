@@ -42,7 +42,7 @@ export default function HomeBanner() {
                         <div className="col-lg-6">
                             <div className="home-avatar-box">
                                 <div className="home-avatar-in">
-                                    <img src="img/katharina-home.png" alt="Katharina Köster" />
+                                    <img src="img/katharina-home.webp" alt="Katharina Köster" />
                                 </div>
                             </div>
                         </div>
