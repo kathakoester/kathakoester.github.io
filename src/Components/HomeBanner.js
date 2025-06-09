@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useTheme } from "./ThemeProvider";
 //import ReactTypingEffect from 'react-typing-effect';
 
 /*--------------------
@@ -7,8 +6,6 @@ import { useTheme } from "./ThemeProvider";
 ----------------------*/
 
 export default function HomeBanner() {
-    const { theme } = useTheme();
-
     const social_media = [
 
     ]

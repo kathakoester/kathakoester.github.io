@@ -48,7 +48,7 @@ export default function ContactUs() {
                             </div>
                         </div>
                         <div className="col-lg-8 my-3">
-                            <div className="p-3 map-box rounded">
+                            <div className="p-3 map-box rounded betreuungsgebiet">
                                 <div className="ratio ratio-16x9 grayscale">
                                     <img alt="Betreuungsgebiet" src="img/katharina-radius.webp" />
                                 </div>

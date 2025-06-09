@@ -35,7 +35,7 @@ export default function Header() {
     const header_menus = [
         { id:'0', name:'Start', scrollLink:'home', offset: 0 },
         { id:'1', name:'Über mich', scrollLink:'about', offset: 0 },
-        { id:'2', name:'Dienste', scrollLink:'services', offset: 0 },
+        { id:'2', name:'Leistungen', scrollLink:'services', offset: 0 },
         //{ id:'3', name:'Portfolio', scrollLink:'work', offset: 0 },
         //{ id:'4', name:'Blog', scrollLink:'blog', offset: 0 },
         { id:'5', name:'Kontakt', scrollLink:'contactus', offset: 0 }
