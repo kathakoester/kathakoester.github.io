@@ -10,7 +10,7 @@ export default function About() {
                                     <h3>Über Mich</h3>
                                 </div>
                                 <p>
-                                    Hallo, ich bin Katharina, 1979 geboren, Mutter von 2 Kindern und seit März 2025 Hebamme.
+                                    Ich bin Katharina, 1979 geboren, Mutter von 2 Kindern und seit März 2025 Hebamme.
                                     Ich betreue freiberuflich Schwangere und Wöchnerinnen in Winterhude und Barmbek.
                                 </p>
                                 <p>
