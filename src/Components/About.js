@@ -7,7 +7,7 @@ export default function About() {
                         <div className="col-lg-7 ps-xl-5">
                             <div className="about-row about-text">
                                 <div className="sm-title">
-                                    <h3>Über Mich</h3>
+                                    <h3>Über mich</h3>
                                 </div>
                                 <p>
                                     Ich bin Katharina, 1979 geboren, Mutter von 2 Kindern und seit März 2025 Hebamme.
