@@ -47,7 +47,7 @@ export default function Services() {
                                         und zu allen Fragen rund ums Neugeborene im Mittelpunkt. 
                                     </p>
                                     <p>
-                                        In den ersten 10 Tagen komme ich täglich vorbei, danach in Absprache mit Dir alle 2-7 Tage. 
+                                        In den ersten Tagen komme ich täglich vorbei, danach in Absprache mit Dir alle 2-7 Tage. 
                                         Diese Betreuung wird von deiner Krankenkasse bis zum Ende des dritten Lebensmonats deines 
                                         Babys übernommen.
                                     </p>
