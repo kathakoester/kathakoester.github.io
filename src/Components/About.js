@@ -12,6 +12,7 @@ export default function About() {
                                 <p>
                                     Ich bin Katharina, 1979 geboren, Mutter von 2 Kindern und seit März 2025 Hebamme.
                                     Ich betreue freiberuflich Schwangere und Wöchnerinnen in Winterhude und Barmbek.
+                                    Außerdem arbeite ich im Krankenhaus Winsen im Kreißsaal.
                                 </p>
                                 <p>
                                     Vor meinem Hebammenstudium habe ich zwölf Jahre lang medizinische Gebrauchsanweisungen
