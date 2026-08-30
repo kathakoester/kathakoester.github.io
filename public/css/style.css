@@ -5,8 +5,10 @@ Compiled once from the "Zemo Personal Portfolio" theme SCSS (pxdraft)
 when the site was converted from Create React App to static HTML.
 This file is now the source of truth — edit it directly.
 
-Bootstrap 5.3.6, Font Awesome 6.7.2 and the Inter webfont are loaded
-from CDNs via <link> tags in index.html, before this file.
+Bootstrap 5.3.6 is vendored in public/vendor/ and the Inter webfont in
+public/fonts/ — the site loads nothing from a third-party origin.
+Bootstrap is linked before this file, so project rules win at equal
+specificity.
 
 [Table of contents]
 1. Root / brand colors    5. Section
@@ -15,9 +17,30 @@ from CDNs via <link> tags in index.html, before this file.
 4. Footer                 8. Services
                           9. Contact Us
 -------------------------------------------------------------------*/
+/* Inter variable (wght 400-700), self-hosted. Subsets and unicode-ranges
+   match Google Fonts' own slicing; latin covers German umlauts and "ß". */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/inter-latin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/inter-latin-ext.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
   --px-theme: #e4032d;
   --px-theme-inverse:	#f3a9cb;
+  /* Darkened rose for the hero h1: --px-theme-inverse is 1.85:1 on white. */
+  --px-heading-accent: #c2185b;
   --px-body-bg: #ffffff;
   --px-mode: #292929;
   --px-mode-rgb: 41,41,41;
@@ -228,6 +251,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 * {
@@ -406,14 +430,14 @@ body {
 }
 .home-banner .home-avatar-box:before {
   content: "";
-  background-image: url(../img/dots-effect-dark.webp);
+  background-image: radial-gradient(var(--px-gray-2) 2px, transparent 2px);
+  background-size: 22px 22px;
   position: absolute;
   top: 0;
   left: -40px;
   right: 0;
   bottom: 0;
   background-position: left;
-  background-size: cover;
   animation: spin 140s linear infinite;
 }
 .home-banner .home-avatar-box:after {
@@ -461,14 +485,14 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.home-banner .typo-box h6 {
+.home-banner .typo-box .hero-eyebrow {
   font-size: 20px;
   color: var(--px-heading);
   font-weight: 600;
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
-  .home-banner .typo-box h6 {
+  .home-banner .typo-box .hero-eyebrow {
     font-size: 16px;
   }
 }
@@ -598,14 +622,14 @@ body {
   top: -20px;
   transition: ease all 0.35s;
 }
-.feature-box-1 .icon i {
+.feature-box-1 .icon svg {
   position: relative;
   z-index: 1;
-  font-size: 40px;
-  line-height: 1;
-  color: #fff;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
-.feature-box-1 h5 {
+.feature-box-1 h3 {
   font-weight: 500;
   font-size: 18px;
   color: var(--px-heading);
@@ -722,6 +746,7 @@ body {
 .sm-title {
   margin-bottom: 25px;
 }
+.sm-title h2,
 .sm-title h3 {
   color: var(--px-mode);
   font-weight: 500;
@@ -729,6 +754,7 @@ body {
   font-size: 18px;
   padding-left: 15px;
 }
+.sm-title h2:after,
 .sm-title h3:after {
   content: "";
   position: absolute;
@@ -745,6 +771,7 @@ body {
 }
 .logo {
   max-height: 1em;
+  width: auto;
   margin-right: 0.5em;
   vertical-align: bottom;
 }
@@ -755,6 +782,7 @@ body {
 
 .contact-logo img {
   max-height: 3em;
+  width: auto;
   margin-bottom: 1em;
 }
 
@@ -762,8 +790,15 @@ body {
   height: 100%;
 }
 
+/* Links embedded in the Impressum's legal prose sit at 1.43:1 against the
+   surrounding text, so colour alone cannot distinguish them (WCAG 1.4.1). */
+.legal p a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .home-banner .typo-box h1 {
-  color: var(--px-theme-inverse);
+  color: var(--px-heading-accent);
 }
 
 /* Replaces react-scroll's smooth scrolling on the in-page nav links. */
