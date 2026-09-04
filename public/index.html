@@ -82,6 +82,15 @@
           "logo": "https://www.katharinakoester.de/img/katharina-logo.webp",
           "telephone": "+491782446789",
           "email": "hebamme@katharinakoester.de",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 53.5841685,
+            "longitude": 10.0185893
+          },
+          "hasMap": "https://maps.app.goo.gl/cshATRSgSNCyHppq5",
+          "sameAs": [
+            "https://maps.app.goo.gl/cshATRSgSNCyHppq5"
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Barmbeker Str. 23a",
@@ -93,15 +102,27 @@
           "areaServed": [
             {
               "@type": "Place",
-              "name": "Hamburg-Winterhude"
+              "name": "Hamburg-Winterhude",
+              "containedInPlace": {
+                "@type": "City",
+                "name": "Hamburg"
+              }
             },
             {
               "@type": "Place",
-              "name": "Hamburg-Barmbek"
+              "name": "Hamburg-Barmbek",
+              "containedInPlace": {
+                "@type": "City",
+                "name": "Hamburg"
+              }
             },
             {
               "@type": "Place",
-              "name": "Hamburg-Uhlenhorst"
+              "name": "Hamburg-Uhlenhorst",
+              "containedInPlace": {
+                "@type": "City",
+                "name": "Hamburg"
+              }
             }
           ],
           "founder": {
@@ -111,6 +132,7 @@
             "@id": "https://www.katharinakoester.de/#katharina"
           },
           "knowsLanguage": "de",
+          "availableLanguage": "de",
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Leistungen",
@@ -147,6 +169,12 @@
               },
               {
                 "@type": "Offer",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "EUR",
+                  "minPrice": 10,
+                  "maxPrice": 25
+                },
                 "itemOffered": {
                   "@type": "Service",
                   "name": "Kinesiotaping",
@@ -191,7 +219,7 @@
         <nav class="navbar header-nav header-white header-transparent navbar-expand-lg one-page-nav"
              aria-label="Hauptnavigation">
             <div class="container">
-                <a class="navbar-brand" href="/"><img class="logo" src="img/katharina-logo.webp" alt="" width="50" height="50" decoding="async"><span class="header-profession">Hebamme </span>Katharina Köster</a>
+                <a class="navbar-brand" href="/"><img class="logo" src="img/katharina-logo.webp" alt="" width="50" height="50" decoding="async">Hebamme Katharina Köster</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-collapse-toggle" aria-controls="navbar-collapse-toggle"
                         aria-expanded="false" aria-label="Menü öffnen">
@@ -204,6 +232,7 @@
                         <li><a class="nav-link" href="#home" data-scroll-nav="0"><span>Start</span></a></li>
                         <li><a class="nav-link" href="#about" data-scroll-nav="1"><span>Über mich</span></a></li>
                         <li><a class="nav-link" href="#services" data-scroll-nav="2"><span>Leistungen</span></a></li>
+                        <li><a class="nav-link" href="#faq" data-scroll-nav="3"><span>Fragen</span></a></li>
                         <li><a class="nav-link" href="#contactus" data-scroll-nav="5"><span>Kontakt</span></a></li>
                     </ul>
                 </div>
@@ -311,7 +340,7 @@
                                 </svg>
                             </div>
                             <div class="feature-content">
-                                <h3>Schwangerschaft</h3>
+                                <h3>Schwangerenvorsorge</h3>
                                 <p>
                                     Ich begleite dich einfühlsam und kompetent durch die besondere
                                     Zeit der Schwangerschaft. Auf Wunsch übernehme ich alle Vorsorgeuntersuchungen
@@ -334,7 +363,7 @@
                                 </svg>
                             </div>
                             <div class="feature-content">
-                                <h3>Wochenbett</h3>
+                                <h3>Wochenbettbetreuung &amp; Nachsorge</h3>
                                 <p>
                                     Als Hebamme biete ich dir eine umfassende Wochenbettbetreuung und kompetente
                                     Nachsorge in der sensiblen Zeit nach der Geburt. Dabei stehen die körperliche Untersuchung
@@ -381,6 +410,88 @@
             </div>
         </section>
 
+        <section id="faq" data-scroll-data="3" class="section faq-section gray-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="section-title">
+                            <h2><span>Häufige Fragen</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <details class="faq-item">
+                            <summary><h3>Ab wann sollte ich eine Hebamme suchen?</h3></summary>
+                            <p>
+                                So früh wie möglich. Viele Familien in Winterhude und Barmbek melden
+                                sich direkt nach dem positiven Test bei mir – gute Hebammen sind in
+                                Hamburg oft Monate im Voraus ausgebucht. Melde dich auch dann, wenn
+                                du schon weiter bist: Manchmal lässt sich noch etwas einrichten.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Was übernimmt die Krankenkasse?</h3></summary>
+                            <p>
+                                Die Schwangerenvorsorge und die Wochenbettbetreuung inklusive
+                                Nachsorge werden von deiner Krankenkasse übernommen – die
+                                Wochenbettbetreuung bis zum Ende des dritten Lebensmonats deines
+                                Babys. Du brauchst dafür keine Überweisung.
+                            </p>
+                            <p>
+                                Nicht übernommen wird das Kinesiotaping, das rechne ich privat ab.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Wie läuft die Wochenbettbetreuung ab?</h3></summary>
+                            <p>
+                                Ich komme zu dir nach Hause. In den ersten Tagen nach der Geburt
+                                täglich, danach in Absprache mit dir alle zwei bis sieben Tage.
+                                Bei jedem Besuch schaue ich mir dich und dein Baby an, wir sprechen
+                                über das Stillen und über alles, was gerade ansteht – Schlaf,
+                                Bindung, Ernährung oder einfach die Fragen, die sich angesammelt
+                                haben.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Betreust du auch in Barmbek und auf der Uhlenhorst?</h3></summary>
+                            <p>
+                                Ja. Mein Betreuungsgebiet umfasst Winterhude, Barmbek und die
+                                Uhlenhorst. Alle Termine finden als Hausbesuch bei dir statt, du
+                                musst mit Neugeborenem also nirgendwo hin.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Machst du auch Hausbesuche in der Schwangerschaft?</h3></summary>
+                            <p>
+                                Ja. Auf Wunsch übernehme ich alle Vorsorgeuntersuchungen nach den
+                                Mutterschaftsrichtlinien bei dir zu Hause, in Abstimmung mit deiner
+                                Gynäkolog:in. Bei Schwangerschaftsbeschwerden bin ich ebenfalls für
+                                dich da.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Was kostet Kinesiotaping?</h3></summary>
+                            <p>
+                                Je nach Anwendungsstelle und Materialverbrauch zwischen 10 € und
+                                25 €. Kinesiotaping wird nicht von den Krankenkassen übernommen und
+                                wird dir privat in Rechnung gestellt.
+                            </p>
+                        </details>
+                        <details class="faq-item">
+                            <summary><h3>Was ist, wenn du keine Kapazität mehr hast?</h3></summary>
+                            <p>
+                                Melde dich trotzdem – ich sage dir ehrlich, ob ich dich betreuen
+                                kann. Falls nicht, arbeite ich mit
+                                <a href="https://www.carolinheller.de/" target="_blank" rel="noreferrer">Hebamme
+                                Carolin Heller</a> als Vertretung zusammen.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="contactus" data-scroll-data="5" class="section dark-bg-1 contactus-section">
             <div class="container">
                 <div class="row justify-content-center">
@@ -402,8 +513,27 @@
                                     <h3>Betreuungsgebiet</h3>
                                 </div>
                                 <p>
-                                    Stadtteile Winterhude, Barmbek &amp; Uhlenhorst in
-                                    Hamburg
+                                    Ich komme zu dir nach Hause – nach
+                                    <strong>Winterhude</strong> rund um Mühlenkamp, Winterhuder
+                                    Marktplatz und Sierichstraße, nach <strong>Barmbek</strong>
+                                    von Barmbek-Süd bis zum Museum der Arbeit und auf die
+                                    <strong>Uhlenhorst</strong> entlang der Außenalster.
+                                </p>
+                                <p>
+                                    Schwangerenvorsorge, Wochenbettbetreuung und Nachsorge biete
+                                    ich in diesen drei Hamburger Stadtteilen als Hausbesuch an.
+                                    Wenn du direkt an der Stadtteilgrenze wohnst, frag gern
+                                    trotzdem nach.
+                                </p>
+                            </div>
+                            <div class="contact-name">
+                                <div class="sm-title">
+                                    <h3>Adresse</h3>
+                                </div>
+                                <p>
+                                    Hebamme Katharina Köster<br>
+                                    Barmbeker Str. 23a<br>
+                                    22303 Hamburg
                                 </p>
                             </div>
                             <div class="contact-name">

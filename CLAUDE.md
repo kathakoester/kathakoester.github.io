@@ -62,8 +62,9 @@ no i18n. To change text, edit the HTML. Sections in document order:
 |---|---|
 | `home` | eyebrow, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
 | `about` | biography |
-| `services` | the three service cards (Schwangerschaft, Wochenbett, Kinesiotaping) |
-| `contactus` | email, phone, service area (Winterhude/Barmbek/Uhlenhorst), coverage map |
+| `services` | the three service cards (Schwangerenvorsorge, Wochenbettbetreuung & Nachsorge, Kinesiotaping) |
+| `faq` | seven `<details>` Q&As — local-search content, no `FAQPage` schema (see below) |
+| `contactus` | address, email, phone, service area (Winterhude/Barmbek/Uhlenhorst), coverage map |
 
 Note: "Kinesiotatping" in the third service card is a typo that predates the conversion.
 It was preserved deliberately — fix it only if asked.
@@ -114,7 +115,8 @@ Two scripts, both `defer`, at the bottom of `<body>` on `index.html` only:
   to the nav item whose section is in view.
 
 `site.js` matches a nav link's `data-scroll-nav` against a section's `data-scroll-data`.
-**The numbering is 0, 1, 2, 5** — 3 and 4 were Portfolio and Blog, removed from the page.
+**The numbering is 0, 1, 2, 3, 5** — 3 was Portfolio and is now the FAQ; 4 was Blog and
+is still unused.
 Keep the two attributes in sync when adding or reordering sections.
 
 In-page navigation is plain `href="#section"` anchors plus `scroll-behavior: smooth` in CSS.
@@ -135,6 +137,14 @@ assets) were deleted in August 2026.
 
 ## Known cruft — don't mistake it for a pattern
 
+- The JSON-LD deliberately has **no `FAQPage` node**. Google dropped FAQ rich results for
+  non-government sites in 2023, so it would buy nothing while duplicating every answer in a
+  second place that has to be hand-synced. The value of the FAQ is the visible text.
+- `openingHoursSpecification` and `priceRange` are absent from the `#business` node because
+  nobody has supplied real hours, and only Kinesiotaping is privately billed — its 10–25 €
+  range lives on that service's `Offer` instead. Don't invent either.
+- `docs/` holds notes that are *not* part of the site (`public/` is what ships). Nothing there
+  is published or triggers a deploy.
 - `template/` is the untouched purchased theme plus logo source files (`.ai`/`.pdf`) and a
   Word doc. Reference material; not published, not imported.
 - `impressum.html` is deliberately `noindex,follow`, so its Lighthouse SEO score is ~69.

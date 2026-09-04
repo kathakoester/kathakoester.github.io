@@ -7,8 +7,8 @@
  *   [data-scroll-nav].active -> nav item gets the red underline
  *
  * A nav item's data-scroll-nav is matched against a section's
- * data-scroll-data. The numbering is 0, 1, 2, 5 (3 and 4 were Portfolio
- * and Blog, removed from the page) -- keep the two attributes in sync.
+ * data-scroll-data. The numbering is 0, 1, 2, 3, 5 -- 3 was Portfolio and is
+ * now the FAQ; 4 was Blog and is still unused. Keep the two attributes in sync.
  */
 (function () {
     'use strict';

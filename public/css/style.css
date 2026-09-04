@@ -764,9 +764,18 @@ body {
   background: var(--px-theme);
 }
 
+/* Google crawls this site mobile-first, so "Hebamme" has to stay in the brand
+   below 768px. Scale the whole brand down instead of hiding the word — .logo is
+   sized in em, so it shrinks along with the text and the row still fits next to
+   the burger toggler. */
 @media (max-width: 767.98px) {
-  .header-profession {
-    display: none;
+  .main-header .navbar-brand {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .main-header .navbar-brand {
+    font-size: 17px;
   }
 }
 .logo {
@@ -799,6 +808,91 @@ body {
 
 .home-banner .typo-box h1 {
   color: var(--px-heading-accent);
+}
+
+/* Five nav items no longer fit beside the brand between 992px (where the burger
+   gives way to the full nav) and ~1200px. Keep each label on one line and tighten
+   the gaps rather than letting "Über mich" break in half. */
+.main-header .navbar-nav > li > a {
+  white-space: nowrap;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-header .navbar-nav > li {
+    padding: 0 12px;
+  }
+}
+
+/* FAQ. Native <details> rather than the Bootstrap accordion: no extra markup,
+   keyboard and screen-reader behaviour come for free, and the answers stay in
+   the DOM for crawlers either way. */
+.faq-item {
+  background: var(--px-white);
+  border: 1px solid var(--px-gray-2);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 0 20px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 30px 18px 0;
+  position: relative;
+}
+
+/* Safari still paints the disclosure triangle without this. */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary h3 {
+  display: inline;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--px-heading);
+  margin: 0;
+}
+
+.faq-item summary:hover h3,
+.faq-item[open] summary h3 {
+  color: var(--px-theme);
+}
+
+.faq-item summary:after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: 26px;
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--px-theme);
+  border-bottom: 2px solid var(--px-theme);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary:after {
+  transform: rotate(-135deg);
+  top: 30px;
+}
+
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--px-theme);
+  outline-offset: 2px;
+}
+
+.faq-item > p {
+  margin-bottom: 18px;
+}
+
+.faq-item > p:first-of-type {
+  margin-top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item summary:after {
+    transition: none;
+  }
 }
 
 /* Replaces react-scroll's smooth scrolling on the in-page nav links. */
