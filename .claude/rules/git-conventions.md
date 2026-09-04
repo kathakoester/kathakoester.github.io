@@ -10,7 +10,6 @@ Applies to all PRs, including those opened by automated agents.
   business improvements. Reduce technical information to the
   non-obvious how only!
 - Attach detailed implementation plans as a comment to the issue, not in the issue body.
-- All issues created must be linked to the searchnik-mvp project.
 - We use issues to track and plan work, and to document decisions.
 
 ## Branch name
