@@ -214,6 +214,17 @@ specificity.
 .footer .nav a:hover {
   color: var(--px-theme);
 }
+.footer-flags {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-flags svg {
+  display: block;
+  height: 14px;
+  width: auto;
+  border: 1px solid rgba(var(--px-mode-rgb), 0.15);
+}
 .footer p {
   color: var(--px-text);
   font-size: 14px;
