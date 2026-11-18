@@ -416,6 +416,11 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (max-width: 767px) {
+  .home-banner .min-vh-100 {
+    padding-top: 40px;
+  }
+}
 .home-banner .social-share {
   position: absolute;
   top: 0;
