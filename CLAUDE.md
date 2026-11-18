@@ -60,7 +60,7 @@ no i18n. To change text, edit the HTML. Sections in document order:
 
 | `id` | Content |
 |---|---|
-| `home` | eyebrow, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
+| `home` | logo, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
 | `about` | biography |
 | `services` | the three service cards (Schwangerenvorsorge, Wochenbettbetreuung & Nachsorge, Kinesiotaping) |
 | `faq` | seven `<details>` Q&As — local-search content, no `FAQPage` schema (see below) |
@@ -75,9 +75,7 @@ sync, there is no template. The JSON-LD is a `@graph` of `WebSite`, `WebPage`, `
 `Midwife`/`LocalBusiness` and `Person` nodes cross-referenced by `@id`; the business address
 and phone number are the same ones the Impressum is legally required to carry.
 
-Headings are a strict outline: one `h1`, `h2` per section, `h3` for subsections. The hero
-eyebrow is a `p.hero-eyebrow`, deliberately *not* an `h6` — a heading above the `h1` breaks
-the outline.
+Headings are a strict outline: one `h1`, `h2` per section, `h3` for subsections.
 
 ## Styling
 
@@ -92,9 +90,9 @@ last, so project rules win at equal specificity. Bootstrap grid and utility clas
 `.visually-hidden-focusable` for the skip link and `.ratio` for the map — are used directly
 in the markup.
 
-Brand colors are CSS custom properties at the top of `style.css` (`--px-theme: #e4032d`).
-`--px-theme-inverse` (`#f3a9cb`) is only 1.85:1 on white; the hero `h1` uses
-`--px-heading-accent` (`#c2185b`, 5.9:1) instead. Don't put the pale pink back on text.
+Brand colors are CSS custom properties at the top of `style.css` (`--px-theme: #e4032d`, 4.8:1 on
+white). The hero `h1` uses it directly, matching the logo. `--px-theme-inverse` (`#f3a9cb`) is only
+1.85:1 on white — don't put the pale pink on text.
 
 Because `<img>` tags now carry `width`/`height` (for CLS), any rule that constrains one axis
 must free the other — the base `img` rule sets `height: auto`, and `.logo` /

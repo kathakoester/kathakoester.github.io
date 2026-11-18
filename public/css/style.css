@@ -39,8 +39,6 @@ specificity.
 :root {
   --px-theme: #e4032d;
   --px-theme-inverse:	#f3a9cb;
-  /* Darkened rose for the hero h1: --px-theme-inverse is 1.85:1 on white. */
-  --px-heading-accent: #c2185b;
   --px-body-bg: #ffffff;
   --px-mode: #292929;
   --px-mode-rgb: 41,41,41;
@@ -213,6 +211,14 @@ specificity.
 }
 .footer .nav a:hover {
   color: var(--px-theme);
+}
+.footer-logo {
+  padding: 8px 0 4px;
+}
+.footer-logo img {
+  display: inline-block;
+  width: 72px;
+  height: auto;
 }
 .footer-flags {
   display: inline-flex;
@@ -500,17 +506,6 @@ body {
 .home-banner .typo-box {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.home-banner .typo-box .hero-eyebrow {
-  font-size: 20px;
-  color: var(--px-heading);
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .home-banner .typo-box .hero-eyebrow {
-    font-size: 16px;
-  }
 }
 .home-banner .typo-box h1 {
   color: #292929;
@@ -823,7 +818,7 @@ body {
 }
 
 .home-banner .typo-box h1 {
-  color: var(--px-heading-accent);
+  color: var(--px-theme);
 }
 
 /* Five nav items no longer fit beside the brand between 992px (where the burger
@@ -914,4 +909,29 @@ body {
 /* Replaces react-scroll's smooth scrolling on the in-page nav links. */
 html {
   scroll-behavior: smooth;
+}
+
+/* Logo above the hero heading; the hero text block is centered under it. */
+.home-banner .typo-box {
+  text-align: center;
+}
+.home-banner .typo-box h1:after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-banner .typo-box .btn-bar {
+  display: flex;
+  justify-content: center;
+}
+.home-banner .hero-logo {
+  display: block;
+  width: 90px;
+  height: auto;
+  margin: 0 auto 20px;
+}
+@media (max-width: 767px) {
+  .home-banner .hero-logo {
+    width: 72px;
+    margin-bottom: 16px;
+  }
 }
