@@ -63,7 +63,7 @@ no i18n. To change text, edit the HTML. Sections in document order:
 | `home` | eyebrow, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
 | `about` | biography |
 | `services` | the three service cards (Schwangerenvorsorge, Wochenbettbetreuung & Nachsorge, Kinesiotaping) |
-| `faq` | seven `<details>` Q&As — local-search content, no `FAQPage` schema (see below) |
+| `faq` | six `<details>` Q&As — local-search content, no `FAQPage` schema (see below) |
 | `contactus` | address, email, phone, service area (Winterhude/Barmbek/Uhlenhorst), coverage map |
 
 Note: "Kinesiotatping" in the third service card is a typo that predates the conversion.
