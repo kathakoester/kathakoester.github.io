@@ -543,6 +543,8 @@ body {
 .home-banner .typo-box p {
   font-size: 17px;
   max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 767px) {
   .home-banner .typo-box p {
@@ -925,13 +927,25 @@ html {
 }
 .home-banner .hero-logo {
   display: block;
-  width: 120px;
+  width: 150px;
   height: auto;
-  margin: 0 auto 20px;
+  margin: 0 auto 14px;
+}
+/* Name line under the logo; text-indent offsets the trailing letter-spacing so it stays centered. */
+.home-banner .typo-box p.hero-name {
+  margin: 0 auto 10px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  text-transform: uppercase;
+  color: var(--px-mode);
 }
 @media (max-width: 767px) {
   .home-banner .hero-logo {
-    width: 96px;
-    margin-bottom: 16px;
+    width: 120px;
+  }
+  .home-banner .typo-box p.hero-name {
+    font-size: 13px;
   }
 }
