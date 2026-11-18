@@ -214,6 +214,22 @@ specificity.
 .footer .nav a:hover {
   color: var(--px-theme);
 }
+.footer-flags {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.pride-flag {
+  display: block;
+  height: auto;
+  border-radius: 2px;
+}
+.footer-flags .pride-flag {
+  border: 1px solid rgba(var(--px-mode-rgb), 0.15);
+}
+.contact-name svg.pride-flag {
+  margin: 4px 0 28px;
+}
 .footer p {
   color: var(--px-text);
   font-size: 14px;
