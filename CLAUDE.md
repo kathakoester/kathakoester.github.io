@@ -60,7 +60,7 @@ no i18n. To change text, edit the HTML. Sections in document order:
 
 | `id` | Content |
 |---|---|
-| `home` | logo, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
+| `home` | logo, name line, `h1`, subtitle, intro paragraph, portrait, "Kontakt" button |
 | `about` | biography |
 | `services` | the three service cards (Schwangerenvorsorge, Wochenbettbetreuung & Nachsorge, Kinesiotaping) |
 | `faq` | seven `<details>` Q&As — local-search content, no `FAQPage` schema (see below) |
