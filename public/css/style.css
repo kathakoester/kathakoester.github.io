@@ -219,11 +219,16 @@ specificity.
   align-items: center;
   gap: 10px;
 }
-.footer-flags svg {
+.pride-flag {
   display: block;
-  height: 14px;
-  width: auto;
+  height: auto;
+  border-radius: 2px;
+}
+.footer-flags .pride-flag {
   border: 1px solid rgba(var(--px-mode-rgb), 0.15);
+}
+.contact-name svg.pride-flag {
+  margin: 4px 0 28px;
 }
 .footer p {
   color: var(--px-text);
