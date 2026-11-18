@@ -972,11 +972,39 @@ html {
   text-transform: uppercase;
   color: var(--px-mode);
 }
+/* Hero heading and subtitle follow the rest of the page: uppercase, spaced and
+   semi-bold like .section-title and the nav; the subtitle is regular weight.
+   Declared after the base h1/h2 rules so they win at equal specificity. */
+.home-banner .typo-box h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.home-banner .typo-box h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home-banner .typo-box h1 {
+    font-size: 30px;
+    letter-spacing: 2.5px;
+  }
+}
 @media (max-width: 767px) {
   .home-banner .hero-logo {
     width: 120px;
   }
   .home-banner .typo-box p.hero-name {
     font-size: 13px;
+  }
+  .home-banner .typo-box h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .home-banner .typo-box h2 {
+    font-size: 20px;
   }
 }
