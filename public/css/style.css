@@ -803,6 +803,32 @@ body {
   vertical-align: bottom;
 }
 
+/* Brand name in the header: same style as the name line in the hero (uppercase,
+   spaced, semi-bold). Declared after the rules above so it wins at equal
+   specificity. The mobile size scales with the viewport so the whole name still
+   fits next to the burger toggler down to 320px. */
+.main-header .navbar-brand {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.main-header .navbar-brand .logo {
+  max-height: 30px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+@media (max-width: 767.98px) {
+  .main-header .navbar-brand {
+    font-size: clamp(10px, 3.3vw, 13.5px);
+    letter-spacing: 0.14em;
+  }
+  .main-header .navbar-brand .logo {
+    max-height: 24px;
+    margin-right: 8px;
+  }
+}
+
 .contact-logo {
   text-align: center;
 }
