@@ -892,7 +892,7 @@ body {
 .faq-item summary h3 {
   display: inline;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--px-heading);
   margin: 0;
 }
