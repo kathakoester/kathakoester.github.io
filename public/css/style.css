@@ -47,7 +47,7 @@ specificity.
   --px-dark: #292929;
   --px-dark-rgb: 41,41,41;
   --px-white: #fff;
-  --px-gray-1: #f7f6ff;
+  --px-gray-1: #fff3f8; /* section background: faint tint of the logo pink */
   --px-gray-2: #e2e8f0;
 }
 
@@ -526,8 +526,8 @@ body {
   bottom: 0;
   left: 0;
   width: 120px;
-  height: 3px;
-  background: var(--px-theme);
+  height: 4px;
+  background: var(--px-theme-inverse);
 }
 .home-banner .typo-box h2 {
   color: var(--px-heading);
@@ -586,7 +586,7 @@ body {
 /* Services
 ---------------------*/
 .hexagon {
-  background-color: var(--px-theme);
+  background-color: var(--px-theme-inverse);
   border-radius: 10px;
   width: 100px;
   height: 63px;
@@ -599,7 +599,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--px-theme);
+  background-color: var(--px-theme-inverse);
   height: 100%;
   width: 100%;
   border-radius: inherit;
@@ -638,7 +638,7 @@ body {
   z-index: 1;
   width: 40px;
   height: 40px;
-  fill: #fff;
+  fill: var(--px-theme);
 }
 .feature-box-1 h3 {
   font-weight: 500;
@@ -744,8 +744,8 @@ body {
   top: 0;
   margin: auto;
   width: 30px;
-  height: 3px;
-  background: var(--px-theme);
+  height: 4px;
+  background: var(--px-theme-inverse);
 }
 .section-title h2 span:before {
   right: -40px;
@@ -770,9 +770,9 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  width: 2px;
+  width: 4px;
   height: 20px;
-  background: var(--px-theme);
+  background: var(--px-theme-inverse);
 }
 
 /* Google crawls this site mobile-first, so "Hebamme" has to stay in the brand
@@ -925,13 +925,13 @@ html {
 }
 .home-banner .hero-logo {
   display: block;
-  width: 90px;
+  width: 120px;
   height: auto;
   margin: 0 auto 20px;
 }
 @media (max-width: 767px) {
   .home-banner .hero-logo {
-    width: 72px;
+    width: 96px;
     margin-bottom: 16px;
   }
 }

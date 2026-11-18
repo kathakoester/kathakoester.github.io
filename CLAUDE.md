@@ -92,7 +92,9 @@ in the markup.
 
 Brand colors are CSS custom properties at the top of `style.css` (`--px-theme: #e4032d`, 4.8:1 on
 white). The hero `h1` uses it directly, matching the logo. `--px-theme-inverse` (`#f3a9cb`) is only
-1.85:1 on white — don't put the pale pink on text.
+1.85:1 on white — don't put the pale pink on text. It is used only for decoration: the rules
+and dashes next to headings, the service hexagons (with red icons) and, as `--px-gray-1`
+(`#fff3f8`), the tinted section backgrounds.
 
 Because `<img>` tags now carry `width`/`height` (for CLS), any rule that constrains one axis
 must free the other — the base `img` rule sets `height: auto`, and `.logo` /
